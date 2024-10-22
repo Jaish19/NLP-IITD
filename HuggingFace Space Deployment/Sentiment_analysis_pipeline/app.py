@@ -1,4 +1,4 @@
-import streamlit as stx
+import streamlit as st
 from transformers import pipeline
 
 pipe = pipeline('sentiment-analysis')
