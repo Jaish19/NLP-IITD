@@ -1,3 +1,4 @@
+# Word2Vec to NN architecture
 # Importing necessary libraries
 import numpy as np
 from gensim.models import Word2Vec
