@@ -27,7 +27,7 @@ question = st.text_input("❓ Ask a Question", value="What's the session 1?")
 
 if st.button("Get Answer"):
     with st.spinner("Thinking..."):
-        QA_input = {"question": question, "context": context}
-        result = nlp(QA_input)
+        result = nlp(question=question, context=context)
         st.success(f"🧠 **Answer**: {result['answer']}")
         st.caption(f"Score: {result['score']:.2f} | Start: {result['start']}, End: {result['end']}")
+
